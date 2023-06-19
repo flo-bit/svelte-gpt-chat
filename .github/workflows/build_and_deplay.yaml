@@ -22,7 +22,7 @@ jobs:
         run: npm install # Install the dependencies in the local environment
 
       - name: Build 🏗️
-        run: npm run build:static # Run the build script
+        run: npm run build # Run the build script
 
       - name: Deploy 🚀
         uses: peaceiris/actions-gh-pages@v3 # This action will handle the deployment to gh-pages

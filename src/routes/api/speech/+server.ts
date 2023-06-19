@@ -1,5 +1,5 @@
-import { GOOGLE_API_KEY } from '$env/static/private';
 import { textToSpeech } from '../api-calls.js';
+import { env } from '$env/dynamic/private';
 
 export const POST = async ({ request }) => {
   console.log('using serverside api, speech');
@@ -9,7 +9,7 @@ export const POST = async ({ request }) => {
   const languageCode = body?.languageCode;
   const voice = body?.voice;
 
-  const apiKey = GOOGLE_API_KEY;
+  const apiKey = env.GOOGLE_API_KEY ?? '';
 
   return await textToSpeech(text, apiKey, languageCode, voice);
 };
