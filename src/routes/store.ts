@@ -1,6 +1,6 @@
 import { readable, writable } from 'svelte/store';
 
-export const useBrowserSideAPI = readable(false);
+export const useBrowserSideAPI = readable(true);
 export const openaiAPIKey = writable('');
 export const googleAPIKey = writable('');
 
