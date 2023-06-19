@@ -2,11 +2,11 @@
 
 ## features
 
-- speech input
-- speech output
-- streamed response
-- listening mode: automatically start and stop recording when speaking
+- speech input and output (speech synthesis and speech recognition) using google cloud speech-to-text and whisper for text-to-speech
+- multiple languages (for speech input and output)
+- listening mode: automatically start and stop voice recording when speaking
 
+- streamed response
 - serverside or browserside api calls
 
 ## todo
@@ -14,32 +14,24 @@
 - settings:
   - [x] turn on/off speech input
   - [x] turn on/off speech output
-  - [] turn on/off dark mode
   - [x] select language
-  - [] select voice
-  - [] select gpt model
-  - [] select gpt settings (temperature, etc.)
-  - [] set start message
+  - [ ] turn on/off dark mode
+  - [ ] select voice
+  - [ ] select gpt model
+  - [ ] select gpt settings (temperature, etc.)
+  - [ ] set start message
 - [x] add browser side api calls with api keys
-- encode audio to mp3 (for cross browser support)
-- add function calls
-- show loading indicator
-- show error messages
-- multiple chats
-- save chats and settings in local storage
-
-- add light mode
-
-- multiline input
-
-- edit chat (delete, edit, add)
-
-- audio input
-
-  - [] get half second before speech start
-  - [] get half second after clicking stop
-
-- figure out how to play and record on ios when phone locked
+- [x] encode audio to mp3 (for cross browser support)
+- [x] get half second before speech start
+- [x] get half second after clicking stop
+- [ ] add function calls
+- [ ] show loading indicator
+- [ ] show error messages
+- [ ] multiple chats
+- [ ] save chats and settings in local storage
+- [ ] multiline input
+- [ ] edit chat (delete, edit, add)
+- [ ] figure out how to play and record on ios when phone locked
 
 ## Developing
 
